@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6;
+    color: #ff66b2;
+}
+
+header, footer {
+    background: #ff99cc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #e8491d;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #ff3385;
+}
+
+.btn-secondary {
+    background-color: #ff99cc;
+    border-color: #ff99cc;
+}
+
+.btn-secondary:hover {
+    background-color: #ff66b2;
+    border-color: #ff66b2;
+}
+
+.btn-primary {
+    background-color: #ff3385;
+    border-color: #ff3385;
+}
+
+.btn-primary:hover {
+    background-color: #e60073;
+    border-color: #e60073;
+}
+
+.btn-danger {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.btn-danger:hover {
+    background-color: #e60000;
+    border-color: #e60000;
+}
+
+.form-control {
+    border-color: #ff99cc;
+}
+
+.form-control:focus {
+    border-color: #ff66b2;
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 178, 0.25);
+}
+
+#anniversary-section {
+    background-color: #ffccff;
+    color: #ff66b2;
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url('/images/myhart.png') no-repeat center center; /* Updated image URL */
+    background-size: contain;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+.heart.expand {
+    animation: expand 3s forwards; /* Adjusted duration to 3 seconds */
+}
+
+.heart.shrink {
+    animation: shrink 1s forwards;
+}
+
+.large-heart {
+    width: 100px;
+    height: 100px;
+    background: url('/images/myhart.png') no-repeat center center; /* Updated image URL */
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: expand 3s forwards; /* Adjusted duration to 3 seconds */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(20);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(20);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

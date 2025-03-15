@@ -1,0 +1,8 @@
+/* Add any specific styles for the album page here */
+.album-images img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #dc3545; /* Add a red border to the images */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 5px; /* Optional: Add padding inside the border */
+}

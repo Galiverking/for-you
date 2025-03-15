@@ -1,0 +1,30 @@
+.love-theme {
+    background-color: #ffe6f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.love-box {
+    background-color: #ff99cc;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the thumbnails */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) { /* For larger screens like PCs */
+    .thumbnail {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        max-width: 25%; /* Resize to 25% of the original size */
+    }
+}

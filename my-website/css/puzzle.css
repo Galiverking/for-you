@@ -1,0 +1,40 @@
+/* Add any specific styles for the puzzle page here */
+
+#puzzle-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the puzzle container */
+    border: 2px solid #dc3545; /* Add a red border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.puzzle-piece {
+    box-sizing: border-box;
+    border: 1px solid #fff; /* Add a white border between pieces */
+    background-size: 400px 400px; /* Adjust the background size to match the container */
+    cursor: pointer;
+}
+
+.puzzle-piece:active {
+    opacity: 0.6; /* Add a visual effect when dragging */
+}
+
+#love-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.show-message {
+    display: block;
+}
