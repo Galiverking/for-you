@@ -1,0 +1,22 @@
+/* Add any specific styles for the calendar page here */
+
+#countdown, #countdown2 {
+    font-size: 2rem; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #dc3545; /* Change the text color to red */
+    background-color: #fff; /* Add a white background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add space between time units */
+}
+
+.time-unit {
+    border: 2px solid #dc3545; /* Add a red border to each time unit */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 10px; /* Add padding inside the border */
+    background-color: #fff; /* Add a white background */
+}
